@@ -10,34 +10,51 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Weather Dashboard</h1>
-    </header>
-
-    <div class="content">
-        <div id="search">
+<div class="content col-md-12">
+        <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+    <div class="row">
+        <div id="search" class="col-sm-4">
             <h2>Search for a City:</h2>
             <input type="text" name="City" id="city" placeholder="e.g. San Diego"><br>
             <button id="search-btn">Search</button>
+            <div id="history"></div>
         </div>
 
-        <div id="history"></div>
-
-        <div id="result">
+        <div id="result" class="col-sm-8 h-50">
+            <h2 id="location"></h2>
             <p>Temp:</p>
             <p>Wind:</p>
             <p>Humidity:</p>
             <p>UV Index:</p>
-        </div>
+        
 
         <section id="forecast" class="">
-                <div class="container-fluid mb-4">
-                    <div class="row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+            <div><h4>5-Day Forecast:</h3></div>
+                <div class="container-fluid ">
+                    <div class="row justify-content-center">
                       <div class="col mt-4">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title" id="date"></h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. lor</p>
+                                <div class="card-text">
+                                    <p>Temp:</p>
+                                    <p>Wind:</p>
+                                    <p>Humidity:</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" id="date"></h5>
+                                <div class="card-text">
+                                    <p>Temp:</p>
+                                    <p>Wind:</p>
+                                    <p>Humidity:</p>
+                                </div>
                               </div>
                         </div>
                       </div>
@@ -45,7 +62,11 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title" id="date"></h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-text">
+                                    <p>Temp:</p>
+                                    <p>Wind:</p>
+                                    <p>Humidity:</p>
+                                </div>
                               </div>
                         </div>
                       </div>
@@ -53,7 +74,11 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title" id="date"></h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-text">
+                                    <p>Temp:</p>
+                                    <p>Wind:</p>
+                                    <p>Humidity:</p>
+                                </div>
                               </div>
                         </div>
                       </div>
@@ -61,24 +86,18 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title" id="date"></h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="col mt-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title" id="date"></h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-text">
+                                    <p>Temp:</p>
+                                    <p>Wind:</p>
+                                    <p>Humidity:</p>
+                                </div>
                               </div>
                         </div>    
-                    </div>
-                  
+                    </div>     
         </section>
+        </div>
     </div>
-
-
-
+</div>
 
 
     <script src="./assets/js/script.js"></script>

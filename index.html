@@ -15,25 +15,28 @@
             <h1>Weather Dashboard</h1>
         </header>
     <div class="row">
-        <div id="search" class="col-sm-4">
+        <div id="search" class="col-sm-3">
             <h2>Search for a City:</h2>
             <input type="text" name="City" id="city" placeholder="e.g. San Diego"><br>
             <button id="search-btn">Search</button>
-            <div id="history"></div>
+            <div id="divider"></div>
+            <div id="history">Orange County</div>
         </div>
 
-        <div id="result" class="col-sm-8 h-50">
-            <h2 id="location"></h2>
-            <p>Temp:</p>
-            <p>Wind:</p>
-            <p>Humidity:</p>
-            <p>UV Index:</p>
+        <div id="result" class="col-sm-9 h-50">
+            <div class="location-container">
+                <h2 id="location"></h2>
+                <p>Temp:</p>
+                <p>Wind:</p>
+                <p>Humidity:</p>
+                <p>UV Index:</p>
+            </div>
         
 
         <section id="forecast" class="">
             <div><h4>5-Day Forecast:</h3></div>
                 <div class="container-fluid ">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-left">
                       <div class="col mt-4">
                         <div class="card">
                             <div class="card-body">

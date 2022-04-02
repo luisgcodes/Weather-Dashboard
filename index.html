@@ -17,23 +17,31 @@
     <div class="row">
         <div id="search" class="col-sm-3">
             <h2>Search for a City:</h2>
-            <input type="text" name="City" id="city" placeholder="e.g. San Diego"><br>
-            <button id="search-btn">Search</button>
+            <!-- Form -->
+                <form action="submit">
+                    <input id="city" type="text" name="city" placeholder="e.g. Los Angeles"><br>
+                    <button id="search-btn">Search</button>
+                </form>
             <div id="divider"></div>
-            <div id="history">Orange County</div>
+            <!-- Search History -->
+            <ul id="cityResults" class="list-group mt-4"></ul>
+
+            <a id="clearStorage" href="#"></a> 
         </div>
 
         <div id="result" class="col-sm-9 h-50">
-            <div class="location-container">
-                <h2 id="location"></h2>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
-                <p>UV Index:</p>
+            
+            <div id="content-right" class="col-md-9 pt-4">
+                
+                <!-- Current weather displayed on top -->
+                <div id="current-weather" class="border rounded"></div>
+               
+                <!-- Five day forecast -->
+                <div id="five-day-forecast" class="mt-5"></div>
             </div>
         
 
-        <section id="forecast" class="">
+        <!-- <section id="forecast" class="">
             <div><h4>5-Day Forecast:</h3></div>
                 <div class="container-fluid ">
                     <div class="row justify-content-left">
@@ -97,7 +105,7 @@
                               </div>
                         </div>    
                     </div>     
-        </section>
+        </section> -->
         </div>
     </div>
 </div>

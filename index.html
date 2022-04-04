@@ -18,13 +18,13 @@
         </header>
     
     <div class="row">
-      <div id="cityContainer" class="col-4 city text-left font-weight-bold">
+      <div id="cityContainer" class="col-4 cityZ text-left font-weight-bold">
         <h2>Search for a City:</h2>
         <form class="searchBtn" action="">
         <div class="input-group">
-          <input id="city" type="search" class="form-control rounded " placeholder="e.g. Los Angeles" aria-label="Search"
+          <input id="cityZ" type="search" class="form-control rounded " placeholder="e.g. Los Angeles" aria-label="Search"
             aria-describedby="search-addon" />
-          <button id="searchBtn" type="button" class="SearchBtn btn-outline-primary bg-primary text-white">search</button>
+          <button id="searchBtn" type="button" class="SearchBtn btn-outline-primary bg-primary text-white">search</button> 
         </div>
         </form>
         <div id="lHistory" class="list-group">
@@ -32,21 +32,21 @@
       </div>
         <div class="col-8 h-50 pr-0 pt-3">
           <div id="localData">
-            <div id="currentWeather" class="border-light">
+            <div id="currentWeather" class="">
               <div class="card">
                 <div class="card-body ">
-                  <h5 id="cityDate" class=" cardTitle"></h5>
-                  <p class="cardText"><span>Temperature: </span><span id="currentTemp"></span></p>
-                  <p class="cardText"><span>Wind: </span><span id="currentWindSpeed"></span></p>
+                  <h5 id="cDate" class=" cardTitle"></h5>
+                  <p class="cardText"><span>Temperature: </span><span id="cTemp"></span></p>
+                  <p class="cardText"><span>Wind: </span><span id="cWindSpeed"></span></p>
                   <p class="cardText"><span>Humidity: </span><span id="currentHumidity"></span></p>
-                  <p class="cardText"><span>UV Index: </span><span id="currentUVIndex" class="d-inline-block"></span></p>
+                  <p class="cardText"><span>UV Index: </span><span id="cUVIndex" class="d-inline-block"></span></p>
                 </div>
               </div>
             </div>
             <div id="five-day-forecast">
               <h3>5-Day Forecast:</h3>
               <div>
-                <div id="fiveDay" class="mt-5">
+                <div id="fiveDay" class="mt-3 d-flex $blue-800 justify-content-between ">
                 </div>
               </div>
             </div>
